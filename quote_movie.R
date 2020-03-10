@@ -5,4 +5,5 @@ suppressMessages(
 ) %>%
     sample_n(1) %>%
     .$quote %>%
-    str_c('\n\n', ., '\n\n')
+    str_c('\n\n', ., '\n\n') %>%
+    message()
